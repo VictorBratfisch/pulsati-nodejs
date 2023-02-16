@@ -19,15 +19,15 @@ app.post('/aeroporto', (req, res) => {
   });
 
   app.post('/empresa', (req, res) => {
-    const { nome } = req.body;
-    const empresa = new Empresa(nome, proximoCodigo);
+    const { nomeE } = req.body;
+    const empresa = new Empresa(nomeE, proximoCodigo);
     proximoCodigo = proximoCodigo + 1;
     empresas.push(empresa);
     res.json(empresa);
   });
 
   //GET
-  
+
   app.get('/aeroporto/:codigo', (req, res) => {
     const codigo = req.params.codigo;
     const aeroporto = aeroportos.find(aeroporto => aeroporto.codigo == codigo);
@@ -64,8 +64,8 @@ app.post('/aeroporto', (req, res) => {
   app.put('/empresa/:codigo', (req, res) => {
     const codigo = req.params.codigo;
     const empresa = empresas.find(empresa => empresa.codigo == codigo);
-    const { nome } = req.body;
-    empresa.nome = nome;
+    const { nomeE } = req.body;
+    empresa.nomeE = nomeE;
     res.json(empresa);
   });
 
