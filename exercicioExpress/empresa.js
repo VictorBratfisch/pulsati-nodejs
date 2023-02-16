@@ -1,8 +1,8 @@
 class Empresa {
-    codigo;
-    nome;
+    codigoE;
+    nomeE;
   
-    constructor(nome, codigo) {
+    constructor(nomeE, codigoE) {
       this.nome = nomeE
       this.codigo = codigoE
     }
