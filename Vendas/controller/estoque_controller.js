@@ -20,12 +20,8 @@ exports.getEstoque = async (req, res) => {
 }
 
 exports.getEstoque10 = async (req, res) => {
-      const { codigoP, quantidade } = req.body;
-      if (quantidade > 10){
-
-      }
-    Estoque.findAll();
-  };
+    
+}
 //update
 
 exports.updateEstoque = async (req, res) => {
