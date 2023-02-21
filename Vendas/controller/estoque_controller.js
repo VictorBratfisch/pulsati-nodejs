@@ -20,8 +20,10 @@ exports.getEstoque = async (req, res) => {
 }
 
 exports.getEstoque10 = async (req, res) => {
-    
-}
+       if(this.getEstoque.res.json < 10){
+          
+       }
+      }
 //update
 
 exports.updateEstoque = async (req, res) => {
